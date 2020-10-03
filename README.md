@@ -38,3 +38,8 @@
     f = open("data.json","w+",encoding="utf-8")
     f.write(prettycontent)
     f.close()
+
+## 查看data.json資料時發現地址產生類似記憶體的位置?
+    如同圖片所示，你會發現在data.json裡面的Name的內容變為了一段類似記憶體的字串，這個內容是正確的，主要是因為unicode編碼問題
+    具體請參考這篇文章:http://ez2learn.com/basic/unicode.html
+    
